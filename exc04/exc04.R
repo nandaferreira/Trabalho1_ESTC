@@ -1,5 +1,5 @@
-#Numa urna há bolas idênticas numeradas de 1 até 100. Serão extraídas 40 bolas com reposição desta urna. Simule este experimento e guarde o resultado dos sorteios em um vetor.
-
+#Numa urna há bolas idênticas numeradas de 1 até 100. Serão extraídas 40 bolas com reposição desta urna. 
+#Simule este experimento e guarde o resultado dos sorteios em um vetor.
 
 set.seed(142)
 sorteio <- sample(1:100, size = 40, replace = TRUE)
