@@ -18,7 +18,6 @@ amigo_oculto <- function(){
 set.seed(150)
 resultado <- replicate(100000, amigo_oculto())
 
-
 head(resultado, 20)
 proporcao_errado <- mean(resultado)
 proporcao_errado
