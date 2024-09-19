@@ -1,5 +1,4 @@
-#Exercício 5
-
+#Exercício 5 
 
 lancamento <- function(){
   x <- 1 #sinalizador para continuar o laço (ou não)
@@ -14,12 +13,14 @@ lancamento <- function(){
       
     }
   }
+  print(vetorDado)
   return(length(vetorDado))
 }
 
-vetor<-c(1,3,5,6,8,9,7,7,8,7)
+quantidadeLancamentos <- lancamento()
+quantidadeLancamentos
 
-sum(vetor==7)
 #Quando eu pergunto se vetor == 4, o R retorna "true" nas posições em que o número aparece
-#se eu fizer o somatório ele me retorna quantas vezes o número apareceu, então
+#se eu fizer o somatório ele me retorna quantas vezes o número apareceu, então já que a condição de parada é até o 4 aparecer duas vezes,
+#"length(vetorDado)" vai retornar o tamanho do vetor, ou seja, a quantidade de vezes necessária para a aparição do número 2x
 
