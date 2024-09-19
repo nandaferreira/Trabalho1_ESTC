@@ -1,5 +1,4 @@
 #Experimento
-
 resultado <- c()
 
 for (j in 1:100000){
@@ -26,11 +25,8 @@ for (j in 1:100000){
 resultado
 
 #Proporção de vitórias
-
 vitorias <- sum(resultado == 1)
 mean(resultado == 1)
 
-
 #OBS:
 #sum(resultado)/length(resultado) #mean de resultado porque ele guarda valores em 0s e 1s, então quando soma o 0 é "desconsiderado", ou seja, nulo na soma
-
