@@ -47,6 +47,8 @@ for(i in 1:10000){
 quantidades
 mean(quantidades)
 
-#Interpretação: O código realiza um experimento de probabilidade que envolve o lançamento de um dado, com o objetivo de determinar 
-#quantos laçamentos serão necessários até que o número 4 apareça duas vezes. Depois, esse experimento é repetido dez mil vezes, 
-#e ao final calcula-se a média do número de lançamentos necessários para atingir a condição de parada.
+#Interpretação: O código realiza um experimento de probabilidade que simula o lançamento de um dado com o objetivo de determinar 
+# quantos lançamentos são necessários até que o número 4 apareça duas vezes. Esse experimento é repetido dez mil vezes, e a média 
+# do número de lançamentos necessários para atingir essa condição de parada é calculada. O resultado obtido para a média representa 
+# a expectativa do número de lançamentos que devemos esperar, em média, até que o número 4 apareça duas vezes. 
+# Esse valor nos dá uma ideia da quantidade típica de lançamentos necessária para alcançar o objetivo definido.
