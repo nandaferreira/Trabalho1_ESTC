@@ -1,0 +1,47 @@
+#Nome: Anna Karolyna Pereira Santos         Matrícula: 12221BCC046
+#Nome: Fernanda Ferreira de Melo            Matrícula: 12211BCC043
+
+#Questão 1
+
+#(a)
+
+azul <- c(1:13)
+vermelha <- c(14:26)
+branca <- c(27:39)
+marrom <- c(40:52)
+baralho <-c(azul, vermelha, branca, marrom)
+
+resultado<- c()
+
+for (j in 1:100000){
+  experimento <- c()
+  experimento <- sample(x = baralho, size = 3, replace = FALSE)
+  
+  proporcaoAzul <- 0
+  
+  for (j in 1:3){
+    if(experimento[j] < 14){
+      proporcaoAzul <- proporcaoAzul + 1
+    }
+  }
+  resultado <- c(resultado,proporcaoAzul == 2)
+}
+  
+mean(as.numeric(resultado)) #Significa que a proporção de vezes em que foram sorteadas exatamente duas cartas azuis é de aproximadamente 0.13777
+
+function (n){
+  for (j in 1:n){
+    experimento <- c()
+    experimento <- sample(x = baralho, size = 3, replace = FALSE)
+    proporcaoAzul <- 0
+    
+    for (j in 1:3){
+      if(experimento[j] < 14){
+        proporcaoAzul <- proporcaoAzul + 1
+      }
+    }
+    resultado <- c(resultado,proporcaoAzul == 2)
+  }
+  
+  mean(as.numeric(resultado))
+}
