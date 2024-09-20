@@ -44,7 +44,8 @@ media_steven <- mean(resultados == "steven")
 print(media_steven)
 print(media_garnit)
 
-#interpretação: o código simula um jogo entre Garnit e Steven, em um lançamento de três moedas, o objetivo é determinar a 
-#frequencia que cada jogador vence em um experimento de dez mil simulações. Ao final, é mostrado a média das vitórias de cada 
-#jogador, mas, como o jogo é baseado em aleatoriedade, a média de vitórias pode variar, porém pode se aproximar de valores que 
-#refletem a probabilidade teórica de cada jogador vencer. 
+#Interpretação: O código simula um jogo entre Steven e Garnit, onde cada um escolhe uma sequência de três lançamentos de moedas. 
+#O objetivo é descobrir quantas vezes cada um vence em dez mil rodadas do jogo. Ao final, calculamos a média de vitórias de cada 
+#jogador. Como o resultado depende da sorte, a média pode variar a cada execução, mas deve se aproximar da probabilidade real de 
+#cada jogador vencer. Isso ajuda a entender como a aleatoriedade influencia os resultados e como as escolhas de cada jogador 
+#impactam suas chances de ganhar!
